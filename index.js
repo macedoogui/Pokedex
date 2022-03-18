@@ -26,7 +26,7 @@ app.get ('/' , (req , res) =>{;
 
 app.post ('/add' , (req,res) => {
     const pokemon = req.body;
-  pokemon.id = pokedex.lenght +1;
+  pokemon.id = pokedex.length+1;
     pokedex.push(pokemon)
 
     res.redirect('/');

@@ -74,7 +74,7 @@ button#cadastrar{
     margin-top: 1rem;
     color: #FFF;
     background-color: #fd0418;
-    border: none;
+    border:solid black;
     height: 50px;
     width:50px;
     line-height: 30px;
@@ -87,7 +87,7 @@ button#cadastrar:hover{
         margin-top: .7rem;
         color: #FFF;
         background-color: #fd0418;
-        border: none;
+        border:solid black;
         height: 50px;
         width:50px;
         line-height: 30px;

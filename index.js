@@ -8,16 +8,16 @@ app.use(express.urlencoded());
 
 const pokedex = [
     {
-      id: .1,
-      nome: '',      
-      imagem: '',
-      tipo: '',
-      altura: '',
-      peso:'',
-      categoria:'',
-      habilidade:'',
-      descriçao:''
-    }
+      id: 1,
+      nome: 'Zeraora',      
+      imagem: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/807.png',
+      tipo: 'Elétrico',
+      altura: '5m',
+      peso:'1kg',
+      categoria:'Thunderclap',
+      habilidade:'Volt Absorb',
+      descriçao:'It electrifies its claws and tears its opponents apart with them. Even if they dodge its attack, they’ll be electrocuted by the flying sparks.'
+    },
 ]
 
 app.get ('/' , (req , res) =>{;
@@ -26,6 +26,7 @@ app.get ('/' , (req , res) =>{;
 
 app.post ('/add' , (req,res) => {
     const pokemon = req.body;
+  pokemon.id = pokedex.lenght +1;
     pokedex.push(pokemon)
 
     res.redirect('/');

@@ -17,11 +17,9 @@
     "url": "https://github.com/macedoogui/Pokedex/issues"
   },
   "homepage": "https://github.com/macedoogui/Pokedex#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }

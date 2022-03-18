@@ -7,34 +7,78 @@ header{
   background-color:red;
 }
 
-header h1{
-  color:
-}
-
 h2{
   width:50%;
+  margin-top:2rem;
 }
 
 main{
   display:flex;
+  flex-wrap: wrap;
 }
 
 #cadastro{
-  width:60.1%;
-  height:604px;
-  background-image:url('./img/Pokedex.png');
-  background-size:contain;
-  background-repeat: no-repeat;
+  margin-top:2rem;
+  width: 60%;
+  height:80vh;
   display: flex;
+  border:solid red;
+  justify-content:space-around;
 }
 
 form{
-  padding-left:2rem;
+  margin-top:5%;
+  border:solid black;  
   display:flex;
   flex-wrap:wrap;
-  width:25.1%;
-  height:64.4%;
-  padding-top:160px;
+  width:50%;
+  height:80%;
+  align-items:center;
+  padding-left: 1rem;
+}
+
+#bloco{
+  width: 250px;
+  height: 320px;
+}
+
+#visor{
+  margin-top:5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.1s ease;
+}
+
+
+#visor:hover{
+  transform: rotateY(180deg);
+}
+
+ #escolhidoFront{
+   position:absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #01501b;
+  color: #000;
+}
+
+#escolhidoBack{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #03fa4d;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  transform: rotateY(180deg);
+
 }
 
 label{
@@ -42,20 +86,22 @@ label{
 }
 
 input{
-  width:80%;
+  width:90%;
   margin-top:2px;
   margin-bottom:8px;
 }
 
 .sub{
-  width:40%;
+  width:35%;
+  
 }
 
 .subLabel{
-  width:40%;
+  width:35%;
+  margin-bottom: 8px;
 }
     
-button{
+#cadastrar{
     margin-top: 1rem;
     color: #FFF;
     background-color: #fd0418;
@@ -68,7 +114,7 @@ button{
     border-radius: 50%;
     }
 
-button:hover{
+#cadastrar:hover{
         margin-top: .7rem;
         color: #FFF;
         background-color: #fd0418;
@@ -88,17 +134,24 @@ button:hover{
   margin-top:.5rem;
 }
 
+
 #cards{
-  overflow-y:scroll;
-  width:39.9%;
+  width:30%;
   display:flex;
   flex-wrap:wrap;
-  justify-content:space-evenly;
 }
 
 .card{
-  margin-top:5rem;
-  border:solid black;
+  margin:0 0 2rem 2rem;
   width:40%;
-  height:30%;
+  height:30%;  
+}
+
+.idCard{
+  width:100;
+  height:1rem;
+}
+
+.imagem{
+  width:50%;
 }

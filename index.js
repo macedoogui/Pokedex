@@ -43,9 +43,11 @@ const pokedex = [
   }
 ]
 
+  let pokemon = undefined;
+
 app.get('/', (req, res) => {
   ;
-  res.render('index', { pokedex });
+  res.render('index', { pokedex,pokemon });
 });
 
 app.post('/add', (req, res) => {

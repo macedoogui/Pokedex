@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *{
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
+  font-family: Josefin Sans;
 }
 
 body{
@@ -12,12 +15,27 @@ header{
   background-color:red;
 }
 
+header h1{
+  padding-left:2rem;
+}
+
+#faixa{
+  background-color:white;
+  width:100%;
+}
+
 h2#subtitulo{
+  padding-left:2rem;
   color:#fff;
   background-color:black;
   width:100%;
-  margin-top:2rem;
 }
+
+#subtitulo a{
+  color:white;
+  font-weight:600;
+}
+
 
 main{
   display:flex;
@@ -26,6 +44,7 @@ main{
 }
 
 #cadastro{
+  font-weight:600;
   margin-top:2rem;
   margin-bottom:2rem;
   width: 60%;
@@ -36,7 +55,7 @@ main{
 }
 
 form{
-  color:white;
+  color:black;
   background-color:#e4010199;
   margin-top:5%;
   margin-bottom:5%;
@@ -131,4 +150,14 @@ h1.id{
 
 .info{
 margin-bottom:10px;
+}
+
+footer{
+  background-color:black;
+}
+
+footer p{
+  color:white;
+  padding-left:2rem;
+  padding-top:.5rem;
 }

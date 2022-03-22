@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Pokédex</title>
+</head>
+
+<body>
+
+  <header>
+    <h1> <a href="/">Pokédex</a></h1>
+  </header>
+  
+    <main>
+
+
+      
+        <section id='cards'>
+
+
+          <% pokemonAtual.forEach((pokemon) => { %>
+            <a href="/detalhes/ <%= pokemon.id %>">
+          <div class='card'>
+            <h1 class = 'id '>.<%=pokemon.id%></h1>
+
+            <img class='imagem' src="<%=pokemon.imagem%>" alt="<%=pokemon.nome%>">
+            <h2 class='info'><%=pokemon.nome%></h2>
+            <h2 class='info'>Peso: <%=pokemon.peso%></h2>
+            <h2 class='info'>Altura: <%=pokemon.altura%></h2>
+            <h2 class='info'>Tipo: <%=pokemon.tipo%></h2>
+            <h2 class='info'>Categoria: <%=pokemon.categoria%></h2>
+            <h2 class='info'>Habilidade: <%=pokemon.habilidade%></h2>
+            <h2 class='info'>Descrição: <%=pokemon.descriçao%></h2>
+            
+          </div>
+                    
+          <%})%>
+ 
+        </section>
+
+    </main> 
+
+    <footer>
+      <p>Este é um projeto de Guilherme Macedo</p>
+    </footer>
+    
+</body>
+</html>

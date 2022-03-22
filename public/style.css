@@ -4,6 +4,10 @@
   margin:0;
   padding:0;
   font-family: Josefin Sans;
+  text-decoration:none;
+}
+*:visited{
+  color:black;
 }
 
 body{
@@ -47,8 +51,7 @@ main{
   font-weight:600;
   margin-top:2rem;
   margin-bottom:2rem;
-  width: 60%;
-  height:100%;
+  width: 57%;
   display: flex;
   justify-content:space-around;
   align-items:center;
@@ -124,24 +127,27 @@ button#cadastrar:hover{
 
 
 #cards{
-  width:37rem;
   display:flex;
   flex-wrap:wrap;
-  justify-content:space-evenly;
+  justify-content:center;
 }
 
 .card{
   background-color:#f9f6f699;
   border:solid black;
-  width:45%;
+  width:20rem;
   margin-bottom:1rem;
+  margin-top:2rem;
   text-align:center;
+  margin-right:5rem;
+  margin-left:2rem;
 }
 .card:hover{
   background-color:#f9f6f699;
   border:solid black;
-  width:45%;
+  width:20rem;
   margin-bottom:1rem;
+  margin-top:2rem;
   text-align:center;
   box-shadow: 10px 5px 5px #29292980;
 }

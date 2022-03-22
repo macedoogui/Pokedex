@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <h1>Pokédex</h1>
+    <h1> <a href="/">Pokédex</a></h1>
   </header>
   
     <main>
@@ -56,18 +56,12 @@
 
 
           <% pokedex.forEach((pokemon) => { %>
-   
+            <a href="/detalhes/ <%= pokemon.id %>">
           <div class='card'>
             <h1 class = 'id '>.<%=pokemon.id%></h1>
 
             <img class='imagem' src="<%=pokemon.imagem%>" alt="<%=pokemon.nome%>">
-            <h2 class='info'><%=pokemon.nome%></h2>
-            <h2 class='info'>Peso: <%=pokemon.peso%></h2>
-            <h2 class='info'>Altura: <%=pokemon.altura%></h2>
-            <h2 class='info'>Tipo: <%=pokemon.tipo%></h2>
-            <h2 class='info'>Categoria: <%=pokemon.categoria%></h2>
-            <h2 class='info'>Habilidade: <%=pokemon.habilidade%></h2>
-            <h2 class='info'>Descrição: <%=pokemon.descriçao%></h2>
+            <h2 id="nome"><%=pokemon.nome%></h2>
             
           </div>
                     

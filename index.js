@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -58,7 +58,29 @@ app.post('/add', (req, res) => {
   res.redirect('/');
 });
 
+app.get('/detalhes/:id', (req, res) => {
+  const pokemonAtual = pokedex.filter((element)=> element.id == req.params.id)
+  res.render('detalhes.ejs', {
+      pokemonAtual
+  })
+  console.log(req.params.id)
+})
+
+
+/*app.get('/detalhes/:id', (req, res) => {
+  const pokemonAtual = pokedex.filter((element)=> element.id == req.params.id)
+  res.render('detalhes.ejs', {
+      pokemonAtual
+  })
+  console.log(req.params.id)
+})
+
+app.get("/detalhes/:id", (req, res) => {
+  const id = +req.params.id;
+  pokemon = pokedex.find((pokemon) => pokemon.id === id);
+  res.redirect("/#cadastro");
+});*/
+
 
 
 app.listen(port);
-

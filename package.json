@@ -4,7 +4,7 @@
   "description": "Projeto 02",
     "engines": {
     "node": "16.x"
-  }
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
